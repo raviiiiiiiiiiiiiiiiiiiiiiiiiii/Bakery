@@ -100,9 +100,19 @@
     }
 
     .nav{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:12px 0;gap:16px;
-    }
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;   /* ✅ fix spacing/alignment */
+  padding:12px 0;
+  gap:12px;
+  position:relative;
+}
+
+@media(min-width:920px){
+  .nav{
+    justify-content:space-between;  /* ✅ desktop stays identical */
+  }
+}
 
     .brand{display:flex;align-items:center;gap:10px}
     .brand .logo{
