@@ -102,15 +102,15 @@
     .nav{
   display:flex;
   align-items:center;
-  justify-content:flex-start;   /* ✅ fix spacing/alignment */
-  padding:12px 0;
+  justify-content:flex-start;
+  padding:8px 0;       /* ✅ Reduced from 12px → tight, clean */
   gap:12px;
   position:relative;
 }
 
 @media(min-width:920px){
   .nav{
-    justify-content:space-between;  /* ✅ desktop stays identical */
+    justify-content:space-between;
   }
 }
 
